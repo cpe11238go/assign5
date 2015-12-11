@@ -367,7 +367,8 @@ void Reset()
   BGX1 = 0;
   
   //Reset Enemy 
-  addEnemy(0);
+  enemyState = 0;
+  addEnemy(enemyState);
   for(int i=0; i<EnemyAlive.length; i++)
     EnemyAlive[i] = 1;
   
